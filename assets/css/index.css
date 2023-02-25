@@ -41,6 +41,13 @@ nav {
     
     ul li {
       margin-right: 3rem;
+      cursor: pointer;
+    }
+
+    ul li:hover{
+      text-decoration: underline;
+      color:rgba(159, 127, 219, 0.8);
+      transition: all 1s ease;
     }
 
 section {
@@ -88,14 +95,12 @@ section {
     form input::placeholder {
       color: #fff;
       text-indent: 1em;
-      font-size: 1.2rem;
-
+      font-size: 1rem;
     }
 
     .buttons {
       margin-top: 1rem;
       display: flex;
-      justify-content: center;
     }
 
     button {
@@ -106,6 +111,7 @@ section {
       padding: 1rem 2rem;
       border-radius: 10px;
       margin-right: 4rem;
+      cursor: pointer;
     }
 
     #buttonOne {

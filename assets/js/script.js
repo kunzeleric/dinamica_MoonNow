@@ -40,6 +40,10 @@ const falha = (element) => {
     let verificador = element.parentNode.children[1];
     verificador.style.display = 'block';
     verificador.innerHTML = "Este campo é obrigatório!";
+
+    setTimeout(() => {
+        limparParagrafo(element);
+    }, 5000)
 }
 
 const sucesso = () => {
