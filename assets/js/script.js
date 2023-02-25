@@ -34,6 +34,9 @@ const limparParagrafo = (element) => {
     let verificador = element.parentNode.children[1];
     verificador.innerHTML = "";
     verificador.style.display = "none";
+
+    verificadorGeral.style.display = 'none';
+
 }
 
 const falha = (element) => {
@@ -41,9 +44,8 @@ const falha = (element) => {
     verificador.style.display = 'block';
     verificador.innerHTML = "Este campo é obrigatório!";
 
-    setTimeout(() => {
-        limparParagrafo(element);
-    }, 5000)
+    verificadorGeral.innerHTML = "Favor preencher os campos acima!";
+    verificadorGeral.style.display = 'block';
 }
 
 const sucesso = () => {

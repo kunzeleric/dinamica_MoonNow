@@ -52,7 +52,7 @@ nav {
 
 section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 5em;
 }
 
@@ -108,9 +108,12 @@ section {
       font-size: 1.5rem;
       letter-spacing: 0.03em;
       color: #e9e1fd;
-      padding: 1rem 2rem;
+      
+      height: 3em;
+      width: 10em;
+      margin-right: 2em;
+
       border-radius: 10px;
-      margin-right: 4rem;
       cursor: pointer;
     }
 
@@ -133,13 +136,12 @@ section {
     }
 
     .campo-form {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     .verificar {
       display: none;
       color: red;
-      height: 0;
       font-size: 0.8em;
     }
 
@@ -181,14 +183,6 @@ section {
     margin-top: 5em;
   }
 
-  #form-area{
-    width: 100%;
-  }
-
-  #form-area h1{
-    font-size: 3em;
-  }
-
   .campo-form{
     margin-bottom: 1.5em;
   }
@@ -203,7 +197,7 @@ section {
 
   #rocket{
     align-self: center;
-    width: 80vw;
+    width: auto;
   }
 }
 
@@ -219,7 +213,13 @@ section {
   }
 
   button{
-    margin: 1rem 0;
+    margin: 1rem;
+  }
+
+  
+  #rocket{
+    align-self: center;
+    width: auto;
   }
 
 }
