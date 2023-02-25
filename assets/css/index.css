@@ -143,6 +143,7 @@ section {
       display: none;
       color: red;
       font-size: 0.8em;
+      height: 0;
     }
 
     .verificarCadastro {
