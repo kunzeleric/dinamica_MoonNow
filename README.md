@@ -11,7 +11,7 @@ Projeto proposto pela Escola DNC durante a live.
     <li>Avisar o usuário caso haja algum problema com o cadastro.</li>
 </ul>
 
-## Tecnologias Usadas :laptop:
+## Tecnologias Usadas :computer:
 
 <ul>
     <li>HTML</li>
