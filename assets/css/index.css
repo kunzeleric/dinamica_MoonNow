@@ -150,6 +150,10 @@ section {
     }
 
 @media only screen and (max-width: 900px) {
+  body{
+    height: auto;
+}
+
   nav{
     justify-content: center;
     flex-direction: column;
@@ -158,6 +162,7 @@ section {
 
   nav ul{
     font-size: 1.5em;
+    margin: 0;
   }
 
   nav ul li{
@@ -189,9 +194,17 @@ section {
   button{
     margin: 1rem 0;
   }
+
+  #rocket{
+    align-self: center;
+    width: 80vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+  body{
+    height: auto;
+  }
 
   section {
     justify-content: center;
@@ -202,4 +215,5 @@ section {
   button{
     margin: 1rem 0;
   }
+
 }
