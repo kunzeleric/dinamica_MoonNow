@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>MoonNow</title>
+</head>
+<body>
+    <nav>
+    <div id="img">
+        <img src="assets/imgs/logotipo.svg">
+    </div>
+    <div class="menu-nav">
+        <ul>
+            <li>Quem somos</li>
+            <li>Nosso propósito</li>
+            <li>Suporte</li>
+        </ul>
+    </div>
+    </nav>
+    <section>
+        <div id="form">
+            <h1>Inscreva-se e <br>viaje para a lua gratuitamente</h1>
+            <form id="myForm">
+                <div class="campo-form">
+                    <input type="text" placeholder="Nome Completo" required onkeyup="validarForm(event)">
+                    <p class="verificar"></p>
+                </div>
+                <div class="campo-form">
+                    <input type="email" placeholder="Email" required onkeyup="validarForm(event)">
+                    <p class="verificar"></p>
+            </div>
+            <div class="buttons">
+                <button id="buttonOne">Quero ir pra a lua!</button>
+                <button id="buttonTwo">Mais informações</button>
+            </div>
+            <p class="verificarCadastro"></p>
+        </div>
+            </form>
+
+        <div id="main-img">
+            <img src="assets/imgs/rocket.svg" alt="Homem em um foguete">
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
