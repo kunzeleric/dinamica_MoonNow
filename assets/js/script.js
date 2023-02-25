@@ -2,8 +2,6 @@ let inputs = Array.from(document.querySelectorAll('input'));
 let verificadorGeral = document.querySelector('.verificarCadastro');
 let form = document.getElementById('myForm');
 
-console.log(inputs);
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     validarForm();
@@ -26,17 +24,14 @@ const validarForm = () => {
 }
 
 const verificar = (event = null, element = null) => {
-    const target = event? event.target : element;
-    console.log(target);
+    const target = event ? event.target : element;
     if(target.value.trim().length === 0) falha(target);
     else(limparParagrafo(target));
 
 }
 
 const limparParagrafo = (element) => {
-    console.log(element);
     let verificador = element.parentNode.children[1];
-    console.log(verificador);
     verificador.innerHTML = "";
     verificador.style.display = "none";
 }
@@ -52,4 +47,9 @@ const sucesso = () => {
     verificadorGeral.style.display = "block";
     verificadorGeral.style.color = 'green';
     verificadorGeral.innerHTML = 'Cadastro realizado!';
+
+    setTimeout(()=>{
+        form.reset();
+        location.reload();
+    }, 5000);
 }

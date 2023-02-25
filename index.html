@@ -13,9 +13,7 @@
 </head>
 <body>
     <nav>
-    <div id="img">
-        <img src="assets/imgs/logotipo.svg">
-    </div>
+    <img id="logo" src="assets/imgs/logotipo.svg">
     <div class="menu-nav">
         <ul>
             <li>Quem somos</li>
@@ -25,15 +23,15 @@
     </div>
     </nav>
     <section>
-        <div id="form">
-            <h1>Inscreva-se e <br>viaje para a lua gratuitamente</h1>
+        <div id="form-area">
+            <h1>Inscreva-se e <br>viaje para a lua<br> gratuitamente</h1>
             <form id="myForm">
                 <div class="campo-form">
-                    <input type="text" placeholder="Nome Completo" required onkeyup="validarForm(event)">
+                    <input type="text" placeholder="Nome Completo" required onkeyup="verificar(event)">
                     <p class="verificar"></p>
                 </div>
                 <div class="campo-form">
-                    <input type="email" placeholder="Email" required onkeyup="validarForm(event)">
+                    <input type="email" placeholder="Email" required onkeyup="verificar(event)">
                     <p class="verificar"></p>
             </div>
             <div class="buttons">
@@ -43,10 +41,7 @@
             <p class="verificarCadastro"></p>
         </div>
             </form>
-
-        <div id="main-img">
-            <img src="assets/imgs/rocket.svg" alt="Homem em um foguete">
-        </div>
+    <img id="rocket" src="assets/imgs/rocket.svg" alt="Homem em um foguete">
     </section>
     <script src="assets/js/script.js"></script>
 </body>

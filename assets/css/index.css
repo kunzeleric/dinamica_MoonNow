@@ -12,135 +12,181 @@ body {
     #23193e 82.63%
   );
   height: 100vh;
+  width: 100vw;
 }
 
-#img {
+#logo {
   margin-left: 3rem;
+  width: auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
   height: 8em;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  color: #fff;
+    ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
 
-  margin-right: 5em;
-
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-    ul li {
       margin-right: 5rem;
+    }
+    
+    ul li {
+      margin-right: 3rem;
     }
 
 section {
   display: flex;
   justify-content: space-around;
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50vw;
-}
-
-    #form h1 {
+    #form-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    #form-area h1 {
       color: rgba(159, 127, 219, 0.8);
       font-style: normal;
       font-weight: 700;
       font-size: 4em;
-      line-height: 50px;
+      line-height: 1;
       text-transform: uppercase;
       text-align: center;
+    }
+    
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    form input {
+      background: #9f7fdb;
+      height: 4em;
+      width: 25em;
+      
+      color: #fff;
+      font-size: 1rem;
+      text-indent: 1em;
+
+      border-radius: 10px;
+      border: 0;
+    }
+    
+    form input::placeholder {
+      color: #fff;
+      text-indent: 1em;
+      font-size: 1.2rem;
 
     }
 
-    form{
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .buttons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
     }
 
-    form input{
-        background: #9F7FDB;
-        height: 3.5em;
-        width: 20vw;
-
-        color: #fff;
-        font-size: 1rem;
-
-        border-radius: 10px;
-        border: 0;
-        text-indent: 1em;
+    button {
+      font-weight: bold;
+      font-size: 1.5rem;
+      letter-spacing: 0.03em;
+      color: #e9e1fd;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      margin-right: 4rem;
     }
 
-    form input::placeholder{
-        color: #fff;
-        text-indent: 1em;
+    #buttonOne {
+      background: #7834f3;
     }
 
-    .buttons{
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
+    #buttonOne:hover {
+      background: #9f7fdb;
+      transition: all 1s ease-in-out;
     }
 
-    button{
-        font-weight: bold;
-        font-size: 1.5rem;
-        letter-spacing: 0.03em;
-        color: #E9E1FD;
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        margin-right: 4rem;
+    #buttonTwo {
+      background: #9f7fdb;
     }
 
-    #buttonOne{
-        background: #7834F3;
+    #buttonTwo:hover {
+      background: #7834f3;
+      transition: all 1s ease-in-out;
     }
 
-    #buttonOne:hover{
-        background: #9F7FDB;
-        transition: all 1s ease-in-out;
+    .campo-form {
+      margin-bottom: 3rem;
     }
 
-    #buttonTwo{
-        background: #9F7FDB;
+    .verificar {
+      display: none;
+      color: red;
+      height: 0;
+      font-size: 0.8em;
     }
 
-    #buttonTwo:hover{
-        background: #7834F3;
-        transition: all 1s ease-in-out;
+    .verificarCadastro {
+      display: none;
+      color: red;
+      height: 0;
+      align-self: center;
+      margin-top: 0.5rem;
     }
 
-
-    .campo-form{
-        margin-bottom: 3rem;
+    #rocket{
+        width: auto;
     }
 
-    .verificar{
-        display: none;
-        color: red;
-        height: 0;
-        font-size: 0.8em;
-}   
+@media only screen and (max-width: 900px) {
+  nav{
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
 
-    .verificarCadastro{
-        display: none;
-        color: red;
-        height: 0;
-        align-self: center;
-        margin-top: 0.5rem;
-    }
+  nav ul{
+    font-size: 1.5em;
+  }
+
+  nav ul li{
+    margin-right: 0.8em;
+  }
+
+  section {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  #form-area{
+    width: 100%;
+  }
+
+  #form-area h1{
+    font-size: 3em;
+  }
+
+  .campo-form{
+    margin-bottom: 1.5em;
+  }
+
+  .buttons{
+    flex-direction: column;
+  }
+
+  button{
+    margin: 1rem 0;
+  }
+}
